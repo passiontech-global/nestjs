@@ -1,0 +1,86 @@
+{
+  "name": "root",
+  "private": true,
+  "license": "MIT",
+  "dependencies": {
+    "@nestjs/common": "^11.1.2",
+    "@nestjs/core": "^11.1.2",
+    "@nestjs/platform-express": "^11.1.2",
+    "lodash": "^4.17.21",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
+    "@commitlint/prompt": "^19.8.1",
+    "@eslint/eslintrc": "^3.3.1",
+    "@eslint/js": "^9.27.0",
+    "@nestjs/testing": "^11.1.2",
+    "@types/express": "5.0.3",
+    "@types/jest": "^27.0.3",
+    "@types/lodash": "^4.17.17",
+    "@types/node": "^22.15.29",
+    "@types/supertest": "^6.0.3",
+    "@typescript-eslint/eslint-plugin": "^8.33.0",
+    "@typescript-eslint/parser": "8.34.0",
+    "all-contributors-cli": "^6.26.1",
+    "commitizen": "^4.3.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.27.0",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.1",
+    "globals": "^16.2.0",
+    "husky": "^9.1.7",
+    "jest": "^27.4.3",
+    "lerna": "^8.2.2",
+    "lint-staged": "^16.1.0",
+    "prettier": "^3.5.3",
+    "rimraf": "^6.0.1",
+    "supertest": "^7.1.1",
+    "ts-jest": "^27.1.1",
+    "typescript": "4.9.5",
+    "vitepress": "^1.6.3"
+  },
+  "optionalDependencies": {
+    "@vitest/coverage-v8": "^1.6.1",
+    "vitest": "^1.6.1"
+  },
+  "scripts": {
+    "commit": "pnpm git-cz",
+    "lerna:publish": "lerna run build && pnpm test && lerna publish -m 'chore: publish'",
+    "lerna:prerelease": "lerna run build && pnpm test && lerna publish prerelease --preid rc -m 'chore: publish prerelease'",
+    "build": " lerna run build --ignore rabbitmq-integration",
+    "build:watch": "lerna run --parallel build:watch --ignore rabbitmq-integration",
+    "clean": "rimraf packages//lib && rimraf packages//*.tsbuildinfo",
+    "test": "jest",
+    "test:integration": "jest --config ./jest-e2e.json",
+    "test:ci:integration": "NODE_ENV=ci jest --config ./jest-e2e.json --forceExit",
+    "test:ci": "jest --coverage --coverageReporters=cobertura --coverageReporters=html",
+    "test:vitest": "vitest",
+    "test:vitest:ci": "vitest run --coverage",
+    "lint": "eslint .",
+    "contributors:generate": "all-contributors generate",
+    "prepare": "husky",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "pnpm prettier --write",
+      "pnpm lint",
+      "git add"
+    ],
+    "*.md": [
+      "pnpm prettier --write",
+      "git add"
+    ]
+  },
+  "version": "0.0.0",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
