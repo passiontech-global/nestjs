@@ -1,19 +1,16 @@
 import { ModuleMetadata, Type } from '@nestjs/common';
-import { MeiliSearch } from 'meilisearch';
+import { Config } from 'meilisearch';
 
-export interface MeilisearchOptions extends MeiliSearch {
-  host: string;
+export interface MeilisearchOptions extends Config {
   apiKey: string;
+  connectionName?: string;
 }
 
 export interface MeilisearchOptionsFactory {
   createMeilisearchOptions(): Promise<MeilisearchOptions> | MeilisearchOptions;
 }
 
-export type MeilisearchModuleFactoryOptions = Omit<
-  MeilisearchOptions,
-  'connectionName'
->;
+export type MeilisearchModuleFactoryOptions = MeilisearchOptions;
 
 export interface MeilisearchModuleAsyncOptions
   extends Pick<ModuleMetadata, 'imports'> {

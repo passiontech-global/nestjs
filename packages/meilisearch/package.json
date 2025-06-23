@@ -2,13 +2,20 @@
   "name": "@nestjs-meilisearch/meilisearch",
   "version": "1.0.0",
   "description": "A NestJS module for integrating MeiliSearch",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "build": "tsc",
-    "prepare": "npm run build",
+    "build": "tsc --build tsconfig.json",
+    "build:watch": "tsc --build tsconfig.json --watch",
     "test": "jest"
   },
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
   "peerDependencies": {
     "@nestjs/common": "^11.1.2",
     "meilisearch": "^0.37.0"

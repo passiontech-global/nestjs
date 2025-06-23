@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { MeilisearchModule } from './meilisearch.module';
-import { MeilisearchModuleFactoryOptions } from './meilisearch.interface';
+import { MeilisearchOptions } from './meilisearch.interface';
 
 describe('MeilisearchModule', () => {
   let module: TestingModule;
@@ -13,7 +13,7 @@ describe('MeilisearchModule', () => {
             ({
               host: 'http://localhost:7700',
               apiKey: 'test-api-key',
-            }) as MeilisearchModuleFactoryOptions,
+            }) as MeilisearchOptions,
           inject: [],
         }),
       ],
