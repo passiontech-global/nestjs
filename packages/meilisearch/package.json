@@ -9,18 +9,9 @@
     "prepare": "npm run build",
     "test": "jest"
   },
-  "dependencies": {
-    "@nestjs/common": "^10.4.19",
+  "peerDependencies": {
+    "@nestjs/common": "^11.1.2",
     "meilisearch": "^0.37.0"
-  },
-  "devDependencies": {
-    "@nestjs/testing": "^10.4.19",
-    "@types/jest": "^29.5.14",
-    "@types/node": "^20.19.1",
-    "jest": "^29.7.0",
-    "jest-util": "^30.0.2",
-    "ts-jest": "^29.4.0",
-    "typescript": "^5.8.3"
   },
   "author": "DTA",
   "license": "MIT",
