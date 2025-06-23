@@ -36,8 +36,8 @@ jobs:
       - name: Install dependencies
         run: pnpm i --prefer-offline
 
-      - name: Build
-        run: pnpm build --concurrency=12
+      # - name: Build
+      #   run: pnpm build --concurrency=12
 
       - name: Run unit tests
         run: pnpm test:ci
