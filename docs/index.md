@@ -16,8 +16,6 @@ hero:
 features:
   - title: Hasura
     details: Leverage NestJS to make incorporating business logic and event processing easier with Hasura.
-  - title: RabbitMQ
-    details: This module features an opinionated set of decorators for common RabbitMQ patterns including Publish/Subscribe and RPC using Rabbit's Direct Reply-To Queue for optimal performance.
   - title: Stripe
     details: Interacting with the Stripe API or consuming Stripe webhooks in your NestJS applications is now easy as pie
   - title: And much more
