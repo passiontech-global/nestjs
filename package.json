@@ -51,8 +51,6 @@
     "commit": "pnpm git-cz",
     "lerna:publish": "lerna run build && pnpm test && lerna publish -m 'chore: publish'",
     "lerna:prerelease": "lerna run build && pnpm test && lerna publish prerelease --preid rc -m 'chore: publish prerelease'",
-    "test:integration": "jest --config ./jest-e2e.json",
-    "test:ci:integration": "NODE_ENV=ci jest --config ./jest-e2e.json --forceExit",
     "clean": "rimraf packages//lib && rimraf packages//*.tsbuildinfo",
     "test": "jest",
     "test:ci": "jest --coverage --coverageReporters=cobertura --coverageReporters=html",
