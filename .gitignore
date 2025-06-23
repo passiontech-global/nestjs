@@ -6,7 +6,6 @@ packages/testing/*/lib
 .idea
 coverage/
 tsconfig.build.tsbuildinfo
-integration/rabbitmq/dist
 
 # doc ignored directories
 docs/.vitepress/dist

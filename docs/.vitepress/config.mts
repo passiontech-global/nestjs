@@ -31,10 +31,6 @@ export default defineConfig({
             link: '/modules/hasura',
           },
           {
-            text: 'RabbitMQ',
-            link: '/modules/rabbitmq',
-          },
-          {
             text: 'Stripe',
             link: '/modules/stripe',
           },
