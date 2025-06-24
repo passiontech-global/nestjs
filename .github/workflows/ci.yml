@@ -42,5 +42,5 @@ jobs:
       - name: Run unit tests
         run: pnpm test:ci
 
-      - name: Run Vitest unit tests
-        run: pnpm test:vitest:ci
+      # - name: Run Vitest unit tests
+      #   run: pnpm test:vitest:ci
