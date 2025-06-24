@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.3.0](https://github.com/passiontech-global/nestjs/compare/@nestjs-meilisearch/meilisearch@1.2.0...@nestjs-meilisearch/meilisearch@1.3.0) (2025-06-24)
+
+### Features
+
+- **meilisearch:** initial package setup ([60ceba1](https://github.com/passiontech-global/nestjs/commit/60ceba12fee842d6ea2cc252c64608df6f774b8b))
+- **meilisearch:** initial package setup ([b29f781](https://github.com/passiontech-global/nestjs/commit/b29f7812816f5f3625ab04fa278107bb284c87de))
+
 # [1.2.0](https://github.com/golevelup/nestjs/compare/@nestjs-meilisearch/meilisearch@1.1.0...@nestjs-meilisearch/meilisearch@1.2.0) (2025-06-24)
 
 ### Features
