@@ -24,7 +24,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/golevelup/nestjs.git"
+    "url": "git+https://github.com/passiontech-global/nestjs.git"
   },
   "keywords": [
     "nestjs",
