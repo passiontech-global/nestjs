@@ -3,6 +3,33 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.1.0 (2025-06-24)
+
+### Bug Fixes
+
+- change versin meilisearch ([9f823f5](https://github.com/passiontech-global/nestjs/commit/9f823f5eaa3ebb2b69cd7b1dc381c815a6ab79b2))
+
+### Features
+
+- change git repo ([fdc02a6](https://github.com/passiontech-global/nestjs/commit/fdc02a661cbdd84e66370c689da3c91fe1d6fcfb))
+- change git repo ([08f1885](https://github.com/passiontech-global/nestjs/commit/08f1885fcdad592a3a432e113fb377173386e5b7))
+- change module name and version ([7973c05](https://github.com/passiontech-global/nestjs/commit/7973c05b6e527ddd2a38b56f2054a2d4220a1d23))
+- meilisearch ([#1](https://github.com/passiontech-global/nestjs/issues/1)) ([63a8c95](https://github.com/passiontech-global/nestjs/commit/63a8c95d9f1cb60caee60c7b6a96a10112fbcd6d))
+- meilisearch ([#2](https://github.com/passiontech-global/nestjs/issues/2)) ([35e695f](https://github.com/passiontech-global/nestjs/commit/35e695f50bfdbdbb0772ce7b35b5888ebd92e291))
+
+# 1.1.0 (2025-06-24)
+
+### Bug Fixes
+
+- change versin meilisearch ([9f823f5](https://github.com/passiontech-global/nestjs/commit/9f823f5eaa3ebb2b69cd7b1dc381c815a6ab79b2))
+
+### Features
+
+- change git repo ([fdc02a6](https://github.com/passiontech-global/nestjs/commit/fdc02a661cbdd84e66370c689da3c91fe1d6fcfb))
+- change git repo ([08f1885](https://github.com/passiontech-global/nestjs/commit/08f1885fcdad592a3a432e113fb377173386e5b7))
+- meilisearch ([#1](https://github.com/passiontech-global/nestjs/issues/1)) ([63a8c95](https://github.com/passiontech-global/nestjs/commit/63a8c95d9f1cb60caee60c7b6a96a10112fbcd6d))
+- meilisearch ([#2](https://github.com/passiontech-global/nestjs/issues/2)) ([35e695f](https://github.com/passiontech-global/nestjs/commit/35e695f50bfdbdbb0772ce7b35b5888ebd92e291))
+
 # [1.5.0](https://github.com/passiontech-global/nestjs/compare/@nestjs-meilisearch/meilisearch@1.4.0...@nestjs-meilisearch/meilisearch@1.5.0) (2025-06-24)
 
 ### Features
