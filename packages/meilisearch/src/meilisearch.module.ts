@@ -26,8 +26,9 @@ export class MeilisearchModule {
       exports: [meilisearchProvider],
     };
   }
-
   static forRootAsync(options: MeilisearchModuleAsyncOptions): DynamicModule {
+    const asyncProviders = this.createAsyncProviders(options);
+
     const meilisearchProvider: Provider = {
       provide: 'MEILISEARCH_CLIENT',
       useFactory: async (meilisearchOptions: MeilisearchOptions) => {
@@ -39,13 +40,12 @@ export class MeilisearchModule {
       inject: ['MEILISEARCH_OPTIONS'],
     };
 
-    const asyncProviders = this.createAsyncProviders(options);
-
     return {
       module: MeilisearchModule,
-      imports: options.imports || [],
+      imports: options.imports,
       providers: [...asyncProviders, meilisearchProvider],
       exports: [meilisearchProvider],
+      global: true,
     };
   }
 
