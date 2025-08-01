@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.4.0](https://github.com/passiontech-global/nestjs/compare/@passiontech-global/nestjs-meilisearch@1.3.0...@passiontech-global/nestjs-meilisearch@1.4.0) (2025-08-01)
+
+### Features
+
+- meilisearch ([#5](https://github.com/passiontech-global/nestjs/issues/5)) ([7078f68](https://github.com/passiontech-global/nestjs/commit/7078f685c1fb7d2b4117e526fbdecf27577f714a))
+- update version ([f8177a6](https://github.com/passiontech-global/nestjs/commit/f8177a6dd80cc10588f6a1c54fa4190e43eed1b0))
+
 # [1.3.0](https://github.com/passiontech-global/nestjs/compare/@passiontech-global/nestjs-meilisearch@1.2.0...@passiontech-global/nestjs-meilisearch@1.3.0) (2025-08-01)
 
 ### Features
