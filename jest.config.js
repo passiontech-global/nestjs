@@ -2,10 +2,11 @@
 module.exports = {
   testEnvironment: "node",
   transform: {
-    "^.+.tsx?$": ["ts-jest",{tsconfig: 'tsconfig.spec.json' }],
+    "^.+.tsx?$": ["ts-jest", { tsconfig: 'tsconfig.spec.json' }],
   },
   preset: "ts-jest",
   testPathIgnorePatterns: [
     "/ts-vitest/"
-  ]
+  ],
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.js']
 };

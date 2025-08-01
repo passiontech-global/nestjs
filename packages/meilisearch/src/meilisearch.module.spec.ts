@@ -2,6 +2,15 @@ import { Test, TestingModule } from '@nestjs/testing';
 import { MeilisearchModule } from './meilisearch.module';
 import { MeilisearchOptions } from './meilisearch.interface';
 
+// Mock MeiliSearch to avoid Headers not defined error
+jest.mock('meilisearch', () => {
+  return {
+    MeiliSearch: jest.fn().mockImplementation(() => ({
+      // Add any methods you need to mock
+    })),
+  };
+});
+
 describe('MeilisearchModule', () => {
   let module: TestingModule;
 
