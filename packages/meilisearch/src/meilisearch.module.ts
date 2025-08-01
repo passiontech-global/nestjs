@@ -8,8 +8,6 @@ import {
 
 @Module({})
 export class MeilisearchModule {
-  static MeiliSearch: MeiliSearch;
-
   static forRoot(options: MeilisearchOptions): DynamicModule {
     if (!options || !options.host || !options.apiKey) {
       throw new Error('Meilisearch options must include host and apiKey');
